@@ -1,4 +1,5 @@
 import os
+import nltk
 
 from chatbot_engine import chat, create_index
 from dotenv import load_dotenv
@@ -8,7 +9,7 @@ from slack_bolt.adapter.socket_mode import SocketModeHandler
 from langchain.memory import ChatMessageHistory
 
 load_dotenv()
-
+nltk.download("punkt_tab")
 index = create_index()
 
 # ボットトークンとソケットモードハンドラーを使ってアプリを初期化します
