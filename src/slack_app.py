@@ -9,7 +9,7 @@ from slack_bolt.adapter.socket_mode import SocketModeHandler
 from langchain.memory import ChatMessageHistory
 
 load_dotenv()
-nltk.download("punkt_tab")
+nltk.download('averaged_perceptron_tagger_eng')
 index = create_index()
 
 # ボットトークンとソケットモードハンドラーを使ってアプリを初期化します
