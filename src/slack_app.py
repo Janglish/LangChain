@@ -9,10 +9,6 @@ from slack_bolt.adapter.socket_mode import SocketModeHandler
 from langchain.memory import ChatMessageHistory
 
 load_dotenv()
-nltk.download('punkt_tab')
-nltk.download('punkt')
-nltk.download('wordnet')
-nltk.download('omw-1.4')
 index = create_index()
 
 # ボットトークンとソケットモードハンドラーを使ってアプリを初期化します
@@ -48,6 +44,10 @@ def handle_mention(event, say):
 
 # アプリを起動します
 if __name__ == "__main__":
+    nltk.download('punkt_tab')
+    nltk.download('punkt')
+    nltk.download('wordnet')
+    nltk.download('omw-1.4')
     app_env = os.environ.get("APP_ENV", "production")
 
     if app_env == "production":
