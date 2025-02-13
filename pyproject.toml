@@ -17,6 +17,7 @@ pytesseract = "0.3.10"
 chromadb = "0.3.23"
 tiktoken = "0.4.0"
 slack-bolt = "1.18.0"
+nltk = "3.9.1"
 
 [tool.poetry.dev-dependencies]
 

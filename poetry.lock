@@ -2017,7 +2017,7 @@ cffi = ["cffi (>=1.11)"]
 [metadata]
 lock-version = "1.1"
 python-versions = "3.11.3"
-content-hash = "8c35734a274bc42261c0d752b6420d90ec0e27836600d0d9b21298ca352a3edf"
+content-hash = "e61adc98c0111b3ae82969985b47faad4cb36fb49bf7908d81894a4a7ccb0c11"
 
 [metadata.files]
 aiofiles = [
