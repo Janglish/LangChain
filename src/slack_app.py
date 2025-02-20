@@ -43,7 +43,7 @@ def handle_mention(event, say):
 
 # アプリを起動します
 if __name__ == "__main__":
-    nltk.download('punkt')
+    nltk.download('punkt', download_dir="/opt/render/nltk_data")
     app_env = os.environ.get("APP_ENV", "production")
 
     if app_env == "production":
