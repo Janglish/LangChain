@@ -7,7 +7,6 @@ from slack_bolt import App
 from slack_bolt.adapter.socket_mode import SocketModeHandler
 
 from langchain.memory import ChatMessageHistory
-nltk.download('punkt')
 load_dotenv()
 index = create_index()
 
